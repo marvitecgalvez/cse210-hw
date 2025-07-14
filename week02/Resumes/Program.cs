@@ -22,6 +22,6 @@ class Program
         myResume._jobsList.Add(job1);
         myResume._jobsList.Add(job2);
 
-        
+        myResume.Display();
     }
 }
