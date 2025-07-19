@@ -6,11 +6,13 @@ class Program
     {
         Journal myJournal = new Journal();
         PromptGenerator generator = new PromptGenerator();
-        bool keepRunning = true;
+        bool turnOnOff = true;
 
         Console.WriteLine("Welcome to the Journal Program!");
 
-        while (keepRunning)
+
+        ////////// Usar turnOnOff para empezar, y detener el programa cuando sea falso
+        while (turnOnOff)
         {
 
             Console.WriteLine("Please select one of the following choices:");
@@ -58,7 +60,7 @@ class Program
                     break;
 
                 case "5":
-                    keepRunning = false;
+                    turnOnOff = false;
                     break;
 
                 default:
