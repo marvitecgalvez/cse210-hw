@@ -14,7 +14,7 @@ public class PromptGenerator
     public string lastPrompt = "";
 
     /////////////// Mostrar prompts aleatorios
-    public string getRandomPrompt()
+    public string GetRandomPrompt()
     {
         Random random = new Random();
         string newPromptIngresed;
