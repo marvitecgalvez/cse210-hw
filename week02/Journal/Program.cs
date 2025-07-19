@@ -30,7 +30,6 @@ class Program
                 case "1":
                     string randomPrompt = generator.GetRandomPrompt();
                     Console.WriteLine(randomPrompt);
-                    Console.Write("> ");
                     string entryText = Console.ReadLine();
                     string date = DateTime.Now.ToShortDateString();
                     Entry newEntry = new Entry
@@ -48,13 +47,13 @@ class Program
                     break;
 
                 case "3":
-                    Console.Write("What is the filename to save to? ");
+                    Console.Write("Enter the filename to save to? ");
                     string saveFile = Console.ReadLine();
                     myJournal.SaveToFile(saveFile);
                     break;
 
                 case "4":
-                    Console.Write("What is the filename to load from? ");
+                    Console.Write("Enter the filename to load from? ");
                     string loadFile = Console.ReadLine();
                     myJournal.LoadFromFile(loadFile);
                     break;
@@ -64,11 +63,11 @@ class Program
                     break;
 
                 default:
-                    Console.WriteLine("Invalid option. Please try again.\n");
+                    Console.WriteLine("Please enter a valid option.\n");
                     break;
             }
         }
-        Console.WriteLine("Goodbye!");
+        Console.WriteLine("See you Tomorrow!");
 
     }
 }
